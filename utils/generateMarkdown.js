@@ -66,13 +66,13 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-  - [License](#License)
-  - [Description](#Description)
-  - [Installation](#Installation)
-  - [Usage](#Usage)
+  - [License](#license)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
   - [Credits](#credits)
   - [Testing](#testing)
-  - [Questions](#Questions)
+  - [Questions](#questions)
   
   ## Installation
   These are required installations for the project

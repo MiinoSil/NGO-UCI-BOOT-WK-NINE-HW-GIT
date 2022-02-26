@@ -2,7 +2,7 @@
 
 ## Links to GitHub Repo and Hosted Git Page
 
-Link to GitHub Repo <https://github.com/MiinoSil/NGO-UCI-BOOT-WK-NINE-HW-GIT>
+Link to [GitHub Repo](https://github.com/MiinoSil/NGO-UCI-BOOT-WK-NINE-HW-GIT)
 
 ## Description
 
@@ -33,10 +33,14 @@ node index.js
 ## Usage
 The following GIF shows how to run the README Generator
 
-![demo GIF](./images/demo.gif)
+![demo GIF](./images/demo1.gif)
+
+[link to video](https://youtu.be/B_uOmU6sAb4)
 
 ## Credits
 Made by Andrew Ngo 2022
+
+[GitHub Profile](https://github.com/MiinoSil)
 ## Acceptance Criteria
 
 ```md
