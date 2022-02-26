@@ -2,14 +2,14 @@
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
-const generateMarkdown = ("./utils/generateMarkdown.js")
+const generateMarkdown = require("./utils/generateMarkdown.js")
 
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of the repository (be unique or be creative?'
+        message: 'What is the title of the repository (be unique or be creative)?'
     },
 
     {
@@ -38,6 +38,18 @@ const questions = [
 
     {
         type: 'input',
+        name: 'GitHubName',
+        message: 'What is your GitHub name?'
+    },
+
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?'
+    },
+
+    {
+        type: 'input',
         name: 'testing',
         message: 'If there are tests in your project, describe how to run them.'
     },
@@ -46,30 +58,34 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Choose a license (use arrow keys to navigate list).',
-        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+        choices: ['GNUAGPLv3', 'GNUGPLv3', 'GNULGPLv3', 'MozillaPublicLicense2.0', 'ApacheLicense2.0', 'MITLicense', 'BoostSoftwareLicense1.0', 'TheUnlicense'],
     },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err => {
-        if (err) {
-            return console.log(err);
-        }
-        console.log("New README.md generated");
+    fs.writeFile(fileName, data, error => {
+        if (error) {
+            return console.log("there is an error");
+        } 
     })
 }
 
 // TODO: Create a function to initialize app
-const generatedREADME = util.promisify(writeToFile);
+const writeFileAsync = util.promisify(writeToFile);
 
 async function init() {
     try {
         const answers = await inquirer.prompt(questions);
+        console.log(answers)
+
         const newREADME = generateMarkdown(answers);
-        await generatedREADME("README1.md", newREADME);
+        console.log(newREADME)
+
+        await writeFileAsync("newREADME.md", newREADME);
+
     } catch (error) {
-        console.log("Failed to generate.");
+        console.log(error);
     }
 };
 

@@ -29,14 +29,14 @@ After installing 'inquirer'
 ```
 node index.js
 ```
-## User Story
 
-```md
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
-```
+## Usage
+The following GIF shows how to run the README Generator
 
+![demo GIF](./images/demo.gif)
+
+## Credits
+Made by Andrew Ngo 2022
 ## Acceptance Criteria
 
 ```md
