@@ -9,7 +9,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of the repository?'
+        message: 'What is the title of the repository (be unique or be creative?'
     },
 
     {
@@ -21,19 +21,31 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'Describe installation requirements for the repository (e.g. npm? requirements? commands?)'
+        message: 'Describe installation requirements for the repository (e.g. npm? requirements?)'
+    },
+
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Describe how to use your APP or project? Are there specific commands or arguments needed?'
     },
 
     {
         type: 'input',
         name: 'credits',
-        message: 'Who else is contributing to the project?'
+        message: 'Who else is contributing to the project (do not forget yourself)?'
+    },
+
+    {
+        type: 'input',
+        name: 'testing',
+        message: 'If there are tests in your project, describe how to run them.'
     },
 
     {
         type: 'list',
         name: 'license',
-        message: 'Choose a license.',
+        message: 'Choose a license (use arrow keys to navigate list).',
         choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
     },
 ];

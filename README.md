@@ -3,6 +3,32 @@
 ## Links to GitHub Repo and Hosted Git Page
 
 Link to GitHub Repo <https://github.com/MiinoSil/NGO-UCI-BOOT-WK-NINE-HW-GIT>
+
+## Description
+
+This is a an app built using nodejs to generate a README based upon user input or answers using the npm inquirer.
+
+## User Story
+
+```md
+AS A developer
+I WANT a README generator
+SO THAT I can quickly create a professional README for a new project
+```
+## Installation
+
+In the terminal or command line run the following code to set up the generator.
+
+```
+npm init
+
+npm i inquirer
+```
+
+After installing 'inquirer'
+```
+node index.js
+```
 ## User Story
 
 ```md
