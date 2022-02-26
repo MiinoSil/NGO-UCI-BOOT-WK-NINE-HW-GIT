@@ -44,14 +44,14 @@ const questions = [
 
     {
         type: 'input',
-        name: 'email',
-        message: 'What is your email?'
+        name: 'question',
+        message: 'What is your email if people have questions about the project?'
     },
 
     {
         type: 'input',
         name: 'testing',
-        message: 'If there are tests in your project, describe how to run them.'
+        message: 'If there are tests in your project, describe how to run them?'
     },
 
     {

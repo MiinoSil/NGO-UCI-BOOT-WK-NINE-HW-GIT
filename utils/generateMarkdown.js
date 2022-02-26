@@ -60,8 +60,19 @@ function generateMarkdown(data) {
   ## License
   ![badge](https://img.shields.io/badge/license-${data.license}-blue)<br />
 
+  This project is covered by ${data.license}.
+
   ## Description
   ${data.description}
+
+  ## Table of Contents
+  - [License](#License)
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Credits](#credits)
+  - [Testing](#testing)
+  - [Questions](#Questions)
   
   ## Installation
   These are required installations for the project
@@ -79,8 +90,10 @@ function generateMarkdown(data) {
   Follow these instructions for testing
   ${data.testing}
 
-  ## contact
+  ## Questions
   Please contact ${data.GitHubName} at ${data.email}
+
+  link to [GitHub Profile](https://github.com/${data.GitHubName})
   `;
 }
 
